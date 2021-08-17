@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 3em; 
-  font-family: 'Source Sans Pro', input-mono-narrow, sans-serif;
+  font-family: 'Overpass Mono', input-mono-narrow, sans-serif;
   line-height: 1.4em;
   font-size: 16px;
   background-image: linear-gradient(#fde6d9, #ffc8c8);
