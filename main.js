@@ -1,3 +1,5 @@
+let isOpen = false;
+
 $(document).ready(function() {
 
   var hash = window.location.hash;
@@ -26,7 +28,7 @@ $(document).ready(function() {
 });
 
 function openSection(id, heading) {
-  if (open && open === heading) closeSection(heading);
+  if (isOpen && isOpen === heading) closeSection(heading);
   else {
     $('.block').hide();
     if (heading) $('.toggle').hide();
@@ -35,7 +37,7 @@ function openSection(id, heading) {
     if (heading) {
       $('#'+heading+'-content').show();    
       if ($(id+' div.toggle:visible')[0]) {
-        open = $(id+' div.toggle:visible')[0].id.substring(0, 2);
+        isOpen = heading;
       }
     }
     window.location.hash = id.substring(1);
@@ -47,6 +49,6 @@ function openSection(id, heading) {
 
 function closeSection(heading) {
   $('.toggle').hide();
-  open = null;
+  isOpen = null;
 }
 

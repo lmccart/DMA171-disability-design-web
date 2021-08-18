@@ -4,7 +4,7 @@ body {
   font-family: 'Overpass Mono', input-mono-narrow, sans-serif;
   line-height: 1.4em;
   font-size: 16px;
-  background-image: linear-gradient(#fde6d9, #ffc8c8);
+  background-image: linear-gradient(#fde6d9, #ffecc8);
   min-height: 1600px;
 }
 
@@ -58,6 +58,15 @@ nav ul {
 
 }
 
+.homework-label {
+  margin-top: 1em;
+  display: block;
+}
+
+ul.homework {
+  margin: 0;
+}
+
 code {
   background: #d5f5ff;
   padding: 1px 3px;
@@ -79,10 +88,9 @@ code {
 }
 
 a, .button {
-  color: black;
+  color: red;
   text-decoration: none;
   cursor: pointer;
-  background: yellow;
 }
 
 h1 a {
@@ -163,10 +171,10 @@ ol li {
 }
 
 .spacer {
-  height: 1em;
+  height: 4em;
 }
 .weekspacer {
-  height: 3em;
+  height: 4em;
 }
 
 #projects h3, #discussions h3 {
@@ -254,6 +262,10 @@ img.max640 {
     top: 5em;
   }
 
+}
+
+.highlight {
+  background: yellow;
 }
 
 @media screen and (max-width: 1110px) {
